@@ -3,6 +3,6 @@ applications:
 - name: tier3webhooklistener
   memory: 256M
   instances: 1
-  url: clwebhook.azurewebsites.net
+  url: https://clwebhook.azurewebsites.net
   path: .
   command: node app.js
