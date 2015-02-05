@@ -33,6 +33,7 @@ if ('development' == app.get('env')) {
 
 app.get('/', function(req, res){
     res.render('index', { title: 'Webhook Listener  ' });
+    console.log("where is the page?");
 })
 
 app.post('/webhook/account', function(req, res){
