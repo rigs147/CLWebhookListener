@@ -3,6 +3,18 @@
  * Module dependencies.
  */
 
+$.ajax({
+    type: "POST",
+    url: "https://api.tier3.com/v2/authentication/login",
+    data: {
+        "APIKey":"08f1f01192ba420b8d808d93b5654c6e",
+        "Password":"[f1B?jVo%`VawoHB"
+    },
+    contentType: "application/json",
+    success: success,
+    dataType: 'json'
+});
+
 var express = require('express');
 //var routes = require('./routes');
 var http = require('http');
@@ -34,7 +46,6 @@ if ('development' == app.get('env')) {
 app.get('/', function(req, res){
     res.render('index', { title: 'Webhook Listener  ' });
     console.log("where is the page?");
-    window.alert("test");
 })
 
 app.post('/webhook/account', function(req, res){
