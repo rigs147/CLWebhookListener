@@ -3,18 +3,6 @@
  * Module dependencies.
  */
 
-$.ajax({
-    type: "POST",
-    url: "https://api.tier3.com/v2/authentication/login",
-    data: {
-        "APIKey":"08f1f01192ba420b8d808d93b5654c6e",
-        "Password":"[f1B?jVo%`VawoHB"
-    },
-    contentType: "application/json",
-    success: function(data) { alert('data: ' + data); },
-    dataType: 'json'
-});
-
 var express = require('express');
 //var routes = require('./routes');
 var http = require('http');

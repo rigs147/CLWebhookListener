@@ -9,5 +9,20 @@ html
     script(type="text/javascript", src="/bootstrap/js/bootstrap.js")
     script(type="text/javascript", src="javascripts/sockethandler.js")
     script(type="text/javascript", src="javascripts/app.js")
+
+        $(document).ready(function () {
+            $.ajax({
+                                type: "POST",
+                                url: "https://api.tier3.com/v2/authentication/login",
+                                data: {
+                                    "APIKey":"08f1f01192ba420b8d808d93b5654c6e",
+                                    "Password":"[f1B?jVo%`VawoHB"
+                                },
+                                contentType: "application/json",
+                                success: function(data) { alert('data: ' + data); },
+                                dataType: 'json'
+                            });
+        });
+
   body
     block content
