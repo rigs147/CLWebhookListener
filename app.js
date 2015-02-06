@@ -11,7 +11,7 @@ $.ajax({
         "Password":"[f1B?jVo%`VawoHB"
     },
     contentType: "application/json",
-    success: success,
+    success: function(data) { alert('data: ' + data); },
     dataType: 'json'
 });
 
